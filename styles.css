@@ -1,0 +1,46 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  background-color: #f0a0a0;
+  position: relative;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+}
+
+.navbar ul li ul li {
+  display: block;
+}
+
+.content {
+  padding: 20px;
+}

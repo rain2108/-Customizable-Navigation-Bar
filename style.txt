@@ -1,0 +1,48 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 200px; /* Adjust width as needed */
+  background-color: #f46e6e;
+  height: 10vh; /* Full height */
+  position: fixed;
+  box-sizing: content-box;
+  display: flex;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar ul li ul {
+  display: none;
+}
+
+.sidebar ul li:hover ul {
+  display: block;
+}
+
+.content {
+  margin-left: 220px; /* Adjust according to sidebar width */
+  padding: 20px;
+}
+
+/* Smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
